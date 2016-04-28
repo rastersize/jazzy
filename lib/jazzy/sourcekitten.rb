@@ -117,6 +117,9 @@ module Jazzy
     # Builds SourceKitten arguments based on Jazzy options
     def self.arguments_from_options(options)
       arguments = ['doc']
+      if options.verbose
+        arguments += ['--verbose']
+      end
       if options.objc_mode
         if options.xcodebuild_arguments.empty?
           arguments += ['--objc', options.umbrella_header.to_s, '--', '-x',

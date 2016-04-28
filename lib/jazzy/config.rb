@@ -299,6 +299,13 @@ module Jazzy
         raise '--assets-directory is deprecated: use --theme instead.'
       end
 
+    # ──────── Debug options ────────
+
+    config_attr :verbose,
+      command_line: '--verbose',
+      description: "Print verbose output when generating documentation.",
+      default: false
+
     # rubocop:enable Style/AlignParameters
 
     def initialize
