@@ -84,7 +84,7 @@ GEM
       bacon (~> 1.2)
     rainbow (2.0.0)
     rake (10.3.2)
-    redcarpet (3.3.3)
+    redcarpet (3.5.1)
     rouge (1.10.1)
     rubocop (0.34.2)
       astrolabe (~> 1.3)
